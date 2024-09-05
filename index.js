@@ -2,9 +2,7 @@ import puppeteer from 'puppeteer';
 // Or import puppeteer from 'puppeteer-core';
 
 // Launch the browser and open a new blank page
-const browser = await puppeteer.launch({headless: false,
-    executablePath: 'mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe'
-});
+const browser = await puppeteer.launch({headless: false});
 const page = await browser.newPage();
 
 // Navigate the page to a URL.
